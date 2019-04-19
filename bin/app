@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+
+const database = require('../controller/databaseController');
+const router = require('../routes/router');
+const app = require("../server");
+const init = require('../init/init')
+
+const port = init.serverPort;
+
+app.use(require('body-parser').json()); 
+app.use(require('body-parser').urlencoded({ extended: true }));
+
+app.use("/", router);
+
+app.set('port', process.env.PORT || port);
+
+database.connect();
+
+app.listen(port, () => {
+    
+    console.log( "serveur launched, listening on port " + port );
+    console.log("environment : " + app.settings.env);
+    
+});
+
+//export app for testing purpose
+module.exports = app;

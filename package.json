@@ -1,0 +1,26 @@
+{
+  "name": "template-api-node",
+  "version": "1.0.0",
+  "description": "api template with controller, router, test folder and express mongoose, chai, chai-http dependencies",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha test/**/*.js",
+    "server": "node ./bin/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://alexisbrunet34@bitbucket.org/alexisbrunet34/template-api-node.git"
+  },
+  "author": "alexis brunet",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "express": "^4.16.4",
+    "mocha": "^5.1.1",
+    "mongoose": "^5.4.19",
+    "request": "^2.88.0",
+    "swagger-ui-express": "^4.0.2"
+  }
+}
