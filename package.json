@@ -22,6 +22,6 @@
     "mongoose": "^5.4.19",
     "request": "^2.88.0",
     "swagger-ui-express": "^4.0.2",
-    "lodash": ">=4.17.13"
+    "lodash": ">=4.17.21"
   }
 }
